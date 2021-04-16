@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clock.css">
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="todo.css">
+    <title>Projects for learning and betterring Javascript</title>
+</head>
+<body>
+    <header>
+        <h1>Javascript Projects</h1>
+        <nav>
+            <li>Projects</li>
+        </nav>
+    </header>
+<div class="pro-clock">
+    <h2>Clock</h2>
+    <div class="hero-main">
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="pro-calc"> 
+ <h2>Calculator</h2>
+    <div class="calculator">
+        <div class="output">
+            <div data-previous class="previous"></div>
+            <div data-current class="current"></div>
+        </div>
+        <button data-all-clear class="span-two">AC</button>
+        <button data-delete>DEL</button>
+            <button data-operation>÷</button>
+            <button data-numbers>1</button>
+            <button data-numbers>2</button>
+            <button data-numbers>3</button>
+            <button data-operation>&times;</button>
+            <button data-numbers>4</button>
+            <button data-numbers>5</button>
+            <button data-numbers>6</button>
+            <button data-operation>+</button>
+            <button data-numbers>7</button>
+            <button data-numbers>8</button>
+            <button data-numbers>9</button>
+            <button data-operation>-</button>
+            <button data-numbers>.</button>
+            <button data-numbers>0</button>
+            <button class="span-two"> = </button>
+    </div>
+</div>
+<div class="to-do">
+    <h2>To-Do List</h2>
+    <div class="wrapper">
+    <div class="user-input">
+            <label for="list-item">To-Do list<br></label>
+            <input type="text" id="list-item" name="list-item" placeholder="Add your new To-Do item">
+            <br><button class="addBtn">ADD</button> <button class="rmvBtn">Remove All</button>
+    </div>
+    
+    <ul class="listItems">
+    </ul>
+
+</div>
+</div>
+
+    <script type="text/javascript" src="clock.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
+    <script type="text/javascript" src="to-do.js"></script>
+</body>
+</html>
