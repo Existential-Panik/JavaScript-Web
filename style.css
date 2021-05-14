@@ -8,12 +8,7 @@ body{
     color: white;
     font-family: Gotham Rounded, sans-serif;
 }
-.hero-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -29,3 +24,67 @@ header li {
     list-style: none;
     font-size: 1.6rem;
 }
+.main-cont{
+    position: relative;
+    margin: auto;
+}
+
+.pro-calc, .pro-clock, .to-do{
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(109, 141, 205, 0.8);
+  }
+
+  /* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
